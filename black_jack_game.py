@@ -132,7 +132,7 @@ def win_conditions(players, dealer):
             print("Not sure what happened")
 
 def main():
-    black_jack_start = print("Welcome to Black Jack")
+    print "Welcome to Black Jack"
     set_table()
     dealer = DealerHand()
     dealer_game(dealer)
