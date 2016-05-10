@@ -83,8 +83,9 @@ players = []
 def set_table():
     number_of_players = int(input("How many players are playing today? "))
     for player in range(0 , number_of_players):
-        name = input("What is the {} player's name? ".format(str(player + 1)))
-        players.append(BlackJackHand(name))
+        name_1 = input("What is the {} player's name? ".format(str(player + 1)))
+        print(name_1)
+        players.append(BlackJackHand(name_1))
 #    return players
 
 def again():
@@ -132,7 +133,7 @@ def win_conditions(players, dealer):
             print("Not sure what happened")
 
 def main():
-    print "Welcome to Black Jack"
+    print ("Welcome to Black Jack")
     set_table()
     dealer = DealerHand()
     dealer_game(dealer)
